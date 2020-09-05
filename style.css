@@ -1,0 +1,858 @@
+/* 
+
+Colors
+
+#F7F7F7 - Top Area Footer Links
+#575757 - light gray text
+#FF385C - search icon container
+*/
+
+/* 
+
+Icons
+
+Globe - <i class="fas fa-globe"></i>
+Chevron Down - <i class="fas fa-chevron-down"></i>
+Hamburger - <i class="fas fa-bars"></i>
+User - <i class="fas fa-user-circle"></i>
+search - <i class="fas fa-search"></i>
+chevron right - <i class="fas fa-chevron-right"></i>
+Facebook - <i class="fab fa-facebook-f"></i>
+Twitter - <i class="fab fa-twitter"></i>
+Instagram - <i class="fab fa-instagram-square"></i>
+Heart - <i class="far fa-heart"></i>
+
+
+*/
+
+/* 
+
+Global Styling
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 
+
+
+
+Top Area
+
+
+
+*/
+
+#top-area {
+    padding: 18px;
+    background: #F7F7F7;
+    margin-bottom: 12px;
+}
+
+#top-area h3 {
+    color: #333;
+    text-decoration: underline;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-area h3:hover {
+    color: black;
+}
+
+/* 
+
+
+
+Main Nav
+
+
+
+*/
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.main-nav .text-logo {
+    width: 118px;
+    cursor: pointer;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-menu li {
+    padding: 0 17px;
+}
+
+.active {
+    border-bottom: 1px solid black;
+}
+
+.main-menu li:hover {
+    border-bottom: 1px solid black;
+}
+
+.main-menu ul li a {
+    padding-bottom: 3px;
+    color: #595959;
+}
+
+.right-menu li  {
+    padding: 0 8px;
+}
+
+.menu-border {
+    display: flex;
+    border: .5px solid #DDDDDD;
+    border-radius: 21px;
+    width: 85px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-border:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 17px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 17px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 17px -6px rgba(0,0,0,0.75);
+}
+
+.align-fix {
+    display: flex;
+    align-items: center;
+}
+
+.fa-user-circle {
+    color: #717171;
+}
+
+.fa-bars{
+    color: #717171;
+}
+
+.gray-hover:hover {
+    background: #f2f2f2;
+    padding: 8px;
+    border-radius: 21px;
+}
+
+/* 
+
+
+
+Search-Bar
+
+
+
+*/
+
+.search-bar {
+    max-width: 800px;
+    height: 60px;
+    border-radius: 24px;
+    border: .5px solid #DDDDDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
+
+.search-bar label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+}
+
+.search-bar span {
+    border-right: .5px solid #DDDDDD;
+    height: 13px;
+}
+
+.search-container {
+    border: 1px solid #FF385C;
+    border-radius: 50%;
+    padding: 16px;
+    background: #FF385C;
+    cursor: pointer;
+}
+
+.search-container:hover {
+ opacity: .9;
+}
+
+.desktop-search-icon {
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-search-icon {
+    display: none;
+}
+
+.fa-search:hover {
+    opacity: .4;
+}
+
+.mobile-input {
+    display: none;
+}
+
+/* 
+
+
+
+Hero
+
+
+
+*/
+
+.hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./img/sunrise-hero.jpg') no-repeat center center/cover;
+     max-width: 100%;
+    height: 60vh; 
+   border-radius: 21px;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+   padding-top: 65px;
+   padding-left: 48px;
+    color: white;
+    font-size: 30px;
+}
+
+.hero p {
+   padding-top: 10px;
+   padding-left: 48px;
+    color: white;
+    font-size: 18px;
+}
+
+.hero a {
+     padding-top: 15px;
+   padding-left: 48px;
+    color: white;
+    font-weight: 700;
+}
+
+.hero i {
+     padding-top: 15px;
+   padding-left: 7px;
+    color: white;
+}
+
+/* 
+
+
+
+Experiences
+
+
+
+*/
+
+.experience-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.experience-cards div {
+    border-radius: 21px;
+    -webkit-box-shadow: 2px 3px 11px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 11px -3px rgba(0,0,0,0.75);
+box-shadow: 2px 3px 11px -3px rgba(0,0,0,0.75);
+border-radius: 21px;
+}
+
+.experience-cards img {
+    width: 100%;
+     border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+}
+
+.experience-cards h3 {
+    padding: 10px;
+}
+
+.experience-cards p {
+    padding: 0px 10px 10px 10px;
+    color: #595959;
+}
+
+/* 
+
+
+
+Broadway
+
+
+
+*/
+
+.broadway {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.broadway-info-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.broadway h2 {
+    padding-top: 70px;
+    font-size: 36px;
+}
+
+.broadway p {
+    padding-top: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.broadway button {
+ background: black;
+ color: white;
+ border: 1px solid white;
+ border-radius: 8px;
+ font-size: 14px;
+ padding: 7px 15px;
+}
+
+
+.broadway button:hover {
+opacity: .8;
+cursor: pointer;
+}
+
+/* 
+
+
+
+Broadway Pics
+
+
+
+*/
+
+.broadway-pics {
+    width: 100%;
+    height: auto;
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.broadway-container {
+    width: 80%;
+    max-width: 1250px;
+    margin: auto;
+    /* height: 90vh; */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.allison {
+            grid-row: 1 / 3;
+            /* vertical-align: bottom; */
+            height: auto;
+            background: #222222;
+            border-radius: 21px;
+        }
+
+
+ .pedro {
+            grid-column: 2 / 4;
+        }
+
+ .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+} 
+
+
+.grid-item {
+    background: #222222;
+    border-radius: 21px;
+}
+
+
+
+.broadway-pics div {
+    cursor: pointer;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+}
+
+.grid-item p {
+    background: #222222;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+}
+
+/* 
+
+
+
+Reject Racism
+
+
+*/
+
+.reject-racism {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 130px;
+}
+
+.reject-racism div h3{
+    width: 80%;
+}
+
+.reject-racism h3 {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.reject-racism p {
+   line-height: 1.5;
+   font-size: 18px;
+}
+
+.light-btn {
+    color: #595959;
+    background: #fff;
+    padding: 7px 15px;
+    border-radius: 8px;
+    margin-top: 28px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 
+
+
+
+Destinations
+
+
+
+*/
+
+.destinations {
+    padding-bottom: 40px;
+}
+
+.destinations ul {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.destinations ul li {
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.dest:hover {
+  border-bottom: 1px solid black;
+}
+
+.arts {
+  border-bottom: 1px solid black;
+}
+
+.links-inner ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(7, 1fr); */
+    grid-gap: 20px;
+}
+
+.links-inner ul li a {
+  font-size: 14px;
+}
+
+.links-inner ul li span {
+   color: #717171;
+}
+
+.links-inner ul li:hover{
+   text-decoration: underline;
+}
+
+/* 
+
+
+
+Bottom Links
+
+
+
+*/
+
+
+.bottom-links {
+    background: #F7F7F7;
+}
+
+.bottom-links-inner {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;    
+}
+
+.bottom-links-inner li {
+ line-height: 2.2;
+}
+
+.bottom-links-inner li:hover {
+ text-decoration: underline;
+}
+
+/* 
+
+
+
+Footer
+
+
+
+*/
+
+.mobile-footer-menu ul {
+    display: none;
+}
+
+footer {
+    background: #F7F7F7;;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+footer ul li {
+    padding: 15px;
+}
+
+.footer-1 li a:hover {
+    text-decoration: underline;
+    opacity: .7;
+}
+
+.footer-2 {
+    margin-left: auto;
+}
+
+
+.footer-2 span {
+    text-decoration: underline;
+}
+
+.footer-2 li a:hover {
+    opacity: .7;
+   
+}
+
+/* 
+
+
+
+Media Queries
+
+
+
+*/
+
+@media only screen and (max-width: 941px) {
+
+    #top-area {
+        background: #fff;
+    }
+
+.text-logo {
+    display: none;
+}
+
+.main-nav {
+    display: none;
+  }
+
+  .search-bar {
+    -webkit-box-shadow: -4px 3px 37px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 3px 37px -12px rgba(0,0,0,0.75);
+    box-shadow: -4px 3px 37px -12px rgba(0,0,0,0.75);
+    justify-content: flex-start;
+     position: fixed;
+    top: 0;
+    width:90%;
+    background: #fff;
+  }
+
+  form {
+      display: none;
+  }
+
+  .fa-search {
+    color: black;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.search-container {
+   border: none;
+   background: #fff;
+}
+
+.mobile-input {
+    display: block;
+    
+}
+
+.mobile-search-icon {
+    display: block;
+    padding-right: 20px;
+}
+
+.desktop-search-icon {
+    display: none;
+}
+
+.hero-text {
+    margin: auto;
+    vertical-align: auto;
+ 
+}
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.broadway-info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.broadway-info-container p {
+padding-bottom: 25px;
+}
+
+.broadway h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.broadway-container {
+    width: 80%;
+    max-width: 1250px;
+    margin: auto;
+    /* height: 90vh; */
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 16px; */
+    display: block;
+}
+
+.grid-item {
+     margin-bottom: 20px;
+}
+
+.allison {
+    height: auto;
+}
+
+.aisha {
+    margin-top: 20px;
+}
+
+.reject-racism {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 130px;
+    
+}
+
+.reject-racism div {
+   
+    text-align: center;
+}
+
+.reject-racism div h3 {
+   width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.reject-racism p {
+   line-height: 1.5;
+   font-size: 18px;
+   text-align: center;
+   padding-top: 35px;
+}
+
+.light-btn {
+    color: #595959;
+    background: #fff;
+    padding: 7px 15px;
+    border-radius: 8px;
+    margin-top: 28px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.destinations h2 {
+    text-align: center;
+}
+
+.heading-links {
+    overflow: hidden;
+}
+
+.links-inner {
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.links-inner ul {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bottom-links-inner {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;  
+    grid-gap: 3rem;  
+}
+
+footer ul {
+    display: grid;
+   grid-template-columns: 1fr;
+  
+}
+
+.mobile-footer-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #717171;
+-webkit-box-shadow: 0px -1px 43px -17px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 43px -17px rgba(0,0,0,0.75);
+box-shadow: 0px -1px 43px -17px rgba(0,0,0,0.75);
+width: 100%;
+position: fixed;
+bottom: 0;
+z-index: 2;
+background: #fff;
+}
+
+.mobile-footer-menu ul li {
+  padding: 30px 50px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.mobile-footer-menu i {
+    font-size: 25px;
+}
+
+.mobile-footer-menu p {
+    font-size: 12px;
+}
+
+.active-mobile {
+    color: #FE395C;
+}
+
+}
+
+
